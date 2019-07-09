@@ -41,12 +41,13 @@
         android:layout_gravity="center"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:background="#d24ee8"
+        android:background="@drawable/round_buttons"
         android:textColor="#ffff"
         android:fontFamily="serif"
         android:layout_marginTop="20dp"
         android:textStyle="bold"
         android:elevation="2dp"
+        android:onClick="typesOfFruits"
         />
     <Button
         android:id="@+id/typesOfVegetables"
@@ -56,12 +57,13 @@
         android:layout_gravity="center"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:background="#35b5bd"
+        android:background= "@drawable/vegetableround"
         android:textColor="#ffff"
         android:fontFamily="serif"
         android:layout_marginTop="20dp"
         android:textStyle="bold"
-        android:elevation="2dp"/>
+        android:elevation="2dp"
+        android:onClick="typesOfVegetables"/>
 
     <Button
         android:id="@+id/typesOfMinerals"
@@ -71,7 +73,7 @@
         android:layout_gravity="center"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:background="#2da404"
+        android:background="@drawable/mineral_round"
         android:textColor="#ffff"
         android:fontFamily="serif"
         android:layout_marginTop="20dp"
@@ -80,6 +82,7 @@
         android:shadowDx="1.2"
         android:shadowDy="1.2"
         android:shadowColor="@color/colorAccent"
-        android:shadowRadius="2.2"/>
+        android:shadowRadius="2.2"
+        android:onClick="typesOfMinerals"/>
 
 </LinearLayout>
