@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,8 +18,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".typesOfFruits"
-                  android:label="Types Of Fruits"></activity>
+        <activity
+            android:name=".typesOfFruits"
+            android:label="Types Of Fruits"
+            android:parentActivityName=".MainActivity">
+        <meta-data android:name="android.support.PARENT_ACTIVITY"
+                   android:value=".MainActivity">
+        </meta-data>
+        </activity>
+        <activity android:name=".allFruits"
+            android:label="@string/all"
+            android:parentActivityName=".typesOfFruits">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                       android:value=".typesOfFruits"></meta-data>
+        </activity>
     </application>
 
 </manifest>
