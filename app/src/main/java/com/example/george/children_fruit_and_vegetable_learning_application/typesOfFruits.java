@@ -16,16 +16,16 @@ public class typesOfFruits extends AppCompatActivity {
     String[] fruitDescription = {"These are Fruits that Are Berries In Nature","These are Fruits that have Vitamin C also Ascorbic Acid","These are Fruits that Are Mellony in nature","These are Fruits that are found in tropical regions","These are Fruits that are Stony","These are Fruits that Avocadoes"};
     Integer[] image = {R.drawable.berries, R.drawable.citrusfruits, R.drawable.melons,R.drawable.tropicalfruits,R.drawable.stonefruits,R.drawable.tomatoesandavocadoes};
     ListView lst;
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+//    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listview);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setSubtitle("Fruit Groupings");
 
         //setting the action bar so that the up functionality can be implemented.
-
         ActionBar actionBar = getSupportActionBar();
 
         actionBar.setDisplayHomeAsUpEnabled(true);
