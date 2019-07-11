@@ -1,8 +1,11 @@
 package com.example.george.children_fruit_and_vegetable_learning_application;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.support.v7.widget.Toolbar;
 
@@ -28,6 +31,19 @@ public class view_berries extends AppCompatActivity {
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
+        AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener(){
+
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position == 0){
+                    Intent intent = new Intent(view_berries.this,single_fruit.class);
+                    startActivity(intent);
+                }
+            }
+        };
+
+        lst.setOnItemClickListener(itemClickListener);
     }
 
 

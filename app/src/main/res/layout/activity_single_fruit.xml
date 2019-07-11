@@ -6,24 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".single_fruit"
     android:orientation="vertical"
-    android:background="@color/grayLight"
+    android:background="#f180ec"
     >
+    <android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:background="@drawable/gradient_background"
-            android:orientation="vertical">
+            android:layout_height="180dp"
+
+            android:orientation="vertical"
+            android:id="@+id/definition">
             <ImageView
                 android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
                 android:src="@drawable/berries_grapes"
-                android:padding="0dp"
-                android:layout_margin="0dp"
-                android:layout_gravity="center"
+                android:layout_gravity="center_horizontal"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -35,6 +41,113 @@
                 android:fontFamily="serif"
                 android:textColor="#ffffff"/>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/definition"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/linear"
+                    >
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="serif"
+                        android:text="Type Of Fruit:"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/textView4"
+                        android:text="Berry Fruit."
+                        android:layout_marginTop="20dp"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:fontFamily="serif"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vitamins"
+                    android:layout_below="@id/linear"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vitamins Present."
+                        android:layout_below="@+id/vitaminsLabel"
+                        android:fontFamily="serif"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/vitamins"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vitamin C"
+                        android:textStyle="bold"
+                        android:fontFamily="serif"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vitamin K 9"
+                        android:textStyle="bold"
+                        android:fontFamily="serif"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:layout_marginTop="10dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vitamin B 12"
+                        android:textStyle="bold"
+                        android:fontFamily="serif"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:layout_marginTop="10dp"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
     </RelativeLayout>
+
+
 
 </LinearLayout>

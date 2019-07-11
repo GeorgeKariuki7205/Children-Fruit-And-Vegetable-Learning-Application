@@ -43,7 +43,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".typesOfFruits" />
         </activity>
-        <activity android:name=".single_fruit"></activity>
+        <activity android:name=".single_fruit"
+                  android:label="Berries"
+                  android:parentActivityName=".view_berries"></activity>
     </application>
 
 </manifest>
