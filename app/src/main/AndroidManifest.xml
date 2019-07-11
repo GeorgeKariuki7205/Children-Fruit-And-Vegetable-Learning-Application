@@ -43,9 +43,42 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".typesOfFruits" />
         </activity>
-        <activity android:name=".single_fruit"
-                  android:label="Berries"
-                  android:parentActivityName=".view_berries"></activity>
+        <activity
+            android:name=".single_fruit"
+            android:label="Berries"
+            android:parentActivityName=".view_berries" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view_berries"/>
+        </activity>
+
+        <activity android:name=".view_melons"
+            android:label="Melons"
+            android:parentActivityName=".typesOfFruits">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                       android:value=".typesOfFruits"/>
+        </activity>
+
+        <activity android:name=".view_tropical_fruits"
+            android:parentActivityName=".typesOfFruits"
+            android:label="Types Of Fruits">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".typesOfFruits"/>
+        </activity>
+
+        <activity android:name=".view_citrus"
+                  android:parentActivityName=".typesOfFruits"
+                  android:label="Types Of Fruits">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".typesOfFruits"/>
+        </activity>
+
+        <activity android:name=".view_stone"
+                  android:parentActivityName=".typesOfFruits"
+                  android:label="Types Of Fruits">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".typesOfFruits"/>
+        </activity>
+
     </application>
 
 </manifest>

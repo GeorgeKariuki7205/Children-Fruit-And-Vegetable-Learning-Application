@@ -47,6 +47,22 @@ public class typesOfFruits extends AppCompatActivity {
                     Intent intent = new Intent(typesOfFruits.this,view_berries.class);
                     startActivity(intent);
                 }
+                else if(position == 1){
+                    Intent intent = new Intent(typesOfFruits.this,view_citrus.class);
+                    startActivity(intent);
+                }
+                else if(position == 2){
+                    Intent intent = new Intent(typesOfFruits.this,view_melons.class);
+                    startActivity(intent);
+                }
+                else if(position == 3){
+                    Intent intent = new Intent(typesOfFruits.this,view_tropical_fruits.class);
+                    startActivity(intent);
+                }
+                else if(position == 4){
+                    Intent intent = new Intent(typesOfFruits.this,view_stone.class);
+                    startActivity(intent);
+                }
             }
         };
 
