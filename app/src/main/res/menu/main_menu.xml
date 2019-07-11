@@ -4,7 +4,7 @@
 
     <item android:title="@string/all"
           android:id="@+id/seeAll"
-          android:icon="@drawable/ic_add_white_24dp"
+          android:icon="@drawable/baseline_all_inclusive_24"
           android:orderInCategory="1"
           app:showAsAction="ifRoom"/>
     <item android:title="Second"

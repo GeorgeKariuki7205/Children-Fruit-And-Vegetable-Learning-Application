@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.support.v7.widget.Toolbar;
 
@@ -33,6 +35,22 @@ public class typesOfFruits extends AppCompatActivity {
         lst = (ListView) findViewById(R.id.listview);
         typesOfFruitsClass typesOfFruits = new typesOfFruitsClass(this,fruitType,fruitDescription,image);
         lst.setAdapter(typesOfFruits);
+
+        //This is the code that wil allow individuals to click on items in the listView and they are taken to the repective pages.
+
+        AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener(){
+
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position == 0){
+                    Intent intent = new Intent(typesOfFruits.this,view_berries.class);
+                    startActivity(intent);
+                }
+            }
+        };
+
+        lst.setOnItemClickListener(itemClickListener);
     }
 
     @Override

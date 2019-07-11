@@ -22,16 +22,28 @@
             android:name=".typesOfFruits"
             android:label="Types Of Fruits"
             android:parentActivityName=".MainActivity">
-        <meta-data android:name="android.support.PARENT_ACTIVITY"
-                   android:value=".MainActivity">
-        </meta-data>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
-        <activity android:name=".allFruits"
+        <activity
+            android:name=".allFruits"
             android:label="@string/all"
             android:parentActivityName=".typesOfFruits">
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                       android:value=".typesOfFruits"></meta-data>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".typesOfFruits" />
         </activity>
+        <activity android:name=".quiz_Layout" />
+        <activity
+            android:name=".view_berries"
+            android:label="Types of Fruits"
+            android:parentActivityName=".typesOfFruits">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".typesOfFruits" />
+        </activity>
+        <activity android:name=".single_fruit"></activity>
     </application>
 
 </manifest>

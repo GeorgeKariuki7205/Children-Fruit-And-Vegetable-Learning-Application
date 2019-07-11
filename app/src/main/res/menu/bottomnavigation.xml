@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="back"
+        android:id="@+id/back"
+        android:icon="@drawable/baseline_chevron_left_24"
+        />
+    <item android:title="details"
+        android:id="@+id/details"
+        android:icon="@drawable/baseline_description_24"
+        />
+    <item android:title="foward"
+        android:id="@+id/foward"
+        android:icon="@drawable/baseline_chevron_right_24"
+        />
+</menu>

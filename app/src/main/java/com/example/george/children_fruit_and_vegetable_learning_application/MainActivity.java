@@ -38,4 +38,9 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = makeText(this, text, duration);
         toast.show();
     }
+
+    public void quiz(View view){
+        Intent intent = new Intent(this, quiz_Layout.class);
+        startActivity(intent);
+    }
 }
