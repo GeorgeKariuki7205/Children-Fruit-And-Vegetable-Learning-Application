@@ -33,12 +33,18 @@ public class view_berries extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener(){
 
+            public  void gettingSpecificFruits(int position){
+                Intent intent = new Intent(view_berries.this,single_fruit.class);
+                intent.putExtra("name",fruitType[position]);
+                intent.putExtra("image",image[position]);
+                intent.putExtra("fruitTypes","Berries");
+                startActivity(intent);
+            }
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if(position == 0){
-                    Intent intent = new Intent(view_berries.this,single_fruit.class);
-                    startActivity(intent);
+                if(position <= 4){
+                    gettingSpecificFruits(position);
                 }
             }
         };
