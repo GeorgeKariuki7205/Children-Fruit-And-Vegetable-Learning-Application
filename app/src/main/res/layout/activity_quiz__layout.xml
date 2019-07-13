@@ -6,7 +6,13 @@
     android:layout_height="match_parent"
 
     tools:context=".quiz_Layout">
-
+    <android.support.v7.widget.Toolbar
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/toolbar"
+        />
     <android.support.design.widget.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="56dp"

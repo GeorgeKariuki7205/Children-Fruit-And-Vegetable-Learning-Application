@@ -34,7 +34,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".typesOfFruits" />
         </activity>
-        <activity android:name=".quiz_Layout" />
+        <activity android:name=".quiz_Layout"
+            android:parentActivityName=".MainActivity"
+            android:label="Quiz"/>
         <activity
             android:name=".view_berries"
             android:label="Types of Fruits"
