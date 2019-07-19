@@ -27,10 +27,16 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void typesOfVegetables(View view){
-        CharSequence text = "Types Of Vegetables.";
-        int duration = Toast.LENGTH_SHORT;
-        Toast toast = makeText(this, text, duration);
-        toast.show();
+//        CharSequence text = "Types Of Vegetables.";
+//        int duration = Toast.LENGTH_SHORT;
+//        Toast toast = makeText(this, text, duration);
+//        toast.show();
+
+
+        //Throwing the intent that should be able to all the new activity that has the types of fruits named on it.
+
+        Intent intent = new Intent(MainActivity.this,typesOfVegetables.class);
+        startActivity(intent);
     }
     public void typesOfMinerals(View view){
         CharSequence text = "Types Of Minerals.";

@@ -34,9 +34,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".typesOfFruits" />
         </activity>
-        <activity android:name=".quiz_Layout"
-            android:parentActivityName=".MainActivity"
-            android:label="Quiz"/>
+        <activity
+            android:name=".quiz_Layout"
+            android:label="Quiz"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".view_berries"
             android:label="Types of Fruits"
@@ -69,12 +70,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".typesOfFruits" />
         </activity>
-        <activity android:name=".view_stone"
-            android:parentActivityName=".typesOfFruits"
-            android:label="Types Of Fruits"/>
-        <activity android:name=".view_tropical_fruits"
-            android:parentActivityName=".typesOfFruits"
-            android:label="Types Of Fruits"></activity>
+        <activity
+            android:name=".view_stone"
+            android:label="Types Of Fruits"
+            android:parentActivityName=".typesOfFruits" />
+        <activity
+            android:name=".view_tropical_fruits"
+            android:label="Types Of Fruits"
+            android:parentActivityName=".typesOfFruits" />
+        <activity android:name=".typesOfVegetables"></activity>
     </application>
 
 </manifest>
